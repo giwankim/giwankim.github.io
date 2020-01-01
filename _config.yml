@@ -8,10 +8,6 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Theme Settings
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: default
-
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -21,14 +17,15 @@ title: Giwan Kim
 title_separator: |
 email: giwan.kim@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Personal blog for Giwan Kim.
 url: giwankim.github.io
-# baseurl: /blog
 repository: giwankim/giwankim.github.io
 twitter_username: isleof13
 github_username: giwankim
+
+# Theme Settings
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: default
 
 # Site search
 search_provider: algolia
@@ -44,11 +41,12 @@ markdown: kramdown
 
 # Outputting
 permalink: /:categories/:title/
-breadcrumbs: true
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+breadcrumbs: true
 
+# Reading files
 include:
   - _pages
 
@@ -81,7 +79,7 @@ author:
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://giwankim.github.io/blog"
+      url: "https://giwankim.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/isleof13"
@@ -124,6 +122,16 @@ comments:
   disqus:
     shortname: "isleof"
 
+# archives
+#  type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
   path: /categories/
@@ -132,6 +140,7 @@ tag_archive:
   path: /tags/
 
 # compress html
+# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
