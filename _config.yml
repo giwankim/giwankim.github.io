@@ -120,7 +120,7 @@ defaults:
 comments:
   provider: "disqus"
   disqus:
-    shortname: "isleof"
+    shortname: "giwankim-github-io"
 
 # archives
 #  type
